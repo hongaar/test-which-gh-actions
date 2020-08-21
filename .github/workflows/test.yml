@@ -18,5 +18,4 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: yarn
       - run: which ${{ matrix.command}}
-      - run: whereis ${{ matrix.command}}
       - run: node test.js ${{ matrix.command}}
