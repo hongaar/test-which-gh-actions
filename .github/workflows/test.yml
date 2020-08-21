@@ -16,6 +16,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
+      - run: yarn
       - run: which ${{ matrix.command}}
       - run: whereis ${{ matrix.command}}
       - run: node test.js ${{ matrix.command}}
