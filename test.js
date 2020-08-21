@@ -10,6 +10,7 @@ async function test() {
     console.log(`"${command}" found in "${path}"`);
   } catch (err) {
     console.error(err);
+    process.exit(1);
   }
 }
 
